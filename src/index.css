@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === RESET === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #140F0B;
+  color: #F6F1E7;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.55;
+}
+
+/* === ILLOCA ARCHITECTURAL DRAFTING GRID (16px) === */
+.bg-grid-drafting {
+  background-attachment: fixed;
+  background-image: 
+    linear-gradient(90deg, rgba(223, 201, 166, 0.045) 1px, transparent 0),
+    linear-gradient(rgba(223, 201, 166, 0.045) 1px, transparent 0);
+  background-position: 0 0;
+  background-size: 16px 16px;
+}
+
+/* === SCROLLBAR — Illoca style: nearly invisible === */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(223,201,166,0.25); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(223,201,166,0.5); }
+
+/* === FILM GRAIN OVERLAY — subtle analog texture === */
+.grain-overlay {
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 9990;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grainShift 8s steps(10) infinite;
+}
+
+@keyframes grainShift {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-3%, 2%); }
+  30% { transform: translate(2%, -3%); }
+  50% { transform: translate(-1%, 1%); }
+  70% { transform: translate(3%, -1%); }
+  90% { transform: translate(-2%, 3%); }
+}
+
+/* === SHINY TEXT SHIMMER (REACT BITS) === */
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.animate-shine {
+  animation: shine 5s linear infinite;
+}
+
+/* === ILLOCA-STYLE KINETIC GRADIENT TEXT === */
+.kinetic-gradient {
+  background: linear-gradient(135deg, #FFFDF9 0%, #DFC9A6 45%, #AFA59A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === ILLOCA-STYLE HERO TEXT — oversized, bleeding edges === */
+.hero-mega {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  color: #F6F1E7;
+}
+
+.hero-serif-accent {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+/* === LENIS SMOOTH SCROLL === */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* === ILLOCA HORIZONTAL DIVIDER LINE === */
+.illoca-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(223,201,166,0.3) 20%, rgba(223,201,166,0.3) 80%, transparent 100%);
+}
+
+/* === VELOCITY SKEW (scroll inertia) === */
+.velocity-skew {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
