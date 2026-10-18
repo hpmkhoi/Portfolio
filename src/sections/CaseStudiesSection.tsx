@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import OutlinedTitle from '../components/OutlinedTitle';
 import { FolderTab, RedlineNote } from '../components/ArchitecturalMarkup';
-import { ArrowUpRight, Play, Maximize2 } from 'lucide-react';
+import { ArrowUpRight, Play, Maximize2, Camera, Scissors, Sparkles, UserCheck, Flame, Layers, CheckCircle2 } from 'lucide-react';
 import SpotlightCard from '../components/react-bits/SpotlightCard';
 import ShinyText from '../components/react-bits/ShinyText';
 
@@ -330,6 +330,116 @@ const CaseStudiesSection: React.FC = () => {
               </div>
             ))}
           </div>
+
+          {/* INDIVIDUAL CONTRIBUTION & WORK BREAKDOWN (GIẢI TRÌNH VAI TRÒ CÁ NHÂN & DẤU ẤN THỰC CHIẾN) */}
+          <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#1B140E] border-2 border-[#DFC9A6]/40 shadow-[8px_8px_0px_rgba(0,0,0,0.6)]">
+            {/* Header Tag */}
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-[#DFC9A6]/20">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#EC633D] animate-pulse" />
+                <span className="font-mono text-xs text-[#EC633D] font-black tracking-widest uppercase">
+                  ✦ SCOPE OF WORK // PHẦN VIỆC CÁ NHÂN ĐẢM NHẬN TRONG DỰ ÁN NHÓM
+                </span>
+              </div>
+              <span className="font-mono text-[11px] px-3 py-1 rounded bg-[#2A1F18] border border-[#DFC9A6]/30 text-[#DFC9A6] font-bold">
+                LEAD PRODUCER &amp; HEAD OF POST-PRODUCTION
+              </span>
+            </div>
+
+            {/* 4 Pillars Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              {/* Pillar 1 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">01 // PRE-PRODUCTION</span>
+                    <Sparkles className="w-4 h-4 text-[#DFC9A6]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Concept &amp; Project Brief
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Độc lập đề xuất thông điệp <strong className="text-[#DFC9A6]">"Break the matrix"</strong>. Khôi trực tiếp phác thảo Moodboard ánh sáng, định hình bảng màu (Cyberpunk Dark &amp; Industrial Raw) và lập bảng phân cảnh Shotlist chi tiết trước ngày bấm máy.
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                  ✓ Tự chủ 100% Concept &amp; Storyboard
+                </div>
+              </div>
+
+              {/* Pillar 2 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">02 // PRODUCTION</span>
+                    <Camera className="w-4 h-4 text-[#EC633D]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Đạo Diễn Hình Ảnh &amp; Bấm Máy
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Trực tiếp cầm máy <strong className="text-[#F6F1E7]">Lumix GH5</strong> ghi hình hiện trường đêm, setup góc máy Dutch Angle tạo độ nghiêng kịch tính, căn góc Flash ngược sáng làm nổi bật chất liệu vải streetwear washed.
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                  ✓ Trực tiếp DOP &amp; Vận hành máy quay
+                </div>
+              </div>
+
+              {/* Pillar 3 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">03 // POST-PRODUCTION</span>
+                    <Scissors className="w-4 h-4 text-[#DFC9A6]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Dựng Hậu Kỳ Match Cut
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Tự tay cắt dựng toàn bộ video TVC bằng <strong className="text-[#F6F1E7]">CapCut Pro &amp; DaVinci</strong>. Ứng dụng kỹ thuật Match Cut nối chuyển động của người mẫu qua 4 vòng lặp thời gian với nhịp cắt gắt 0.5s – 2s/shot.
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                  ✓ 100% Cắt dựng, Sound Design &amp; FX
+                </div>
+              </div>
+
+              {/* Pillar 4 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">04 // LEADERSHIP</span>
+                    <UserCheck className="w-4 h-4 text-[#DFC9A6]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Điều Phối Nhóm &amp; Diễn Xuất
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Lead ekip 5 thành viên (Model, Lighting assistant, Runner). Trực tiếp thị phạm biểu cảm, dáng pose và nhịp bước chân cho người mẫu để khung hình toát lên đúng tinh thần rebel, phong trần của thương hiệu.
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                  ✓ Quản lý tiến độ On-set &amp; Final Cut
+                </div>
+              </div>
+            </div>
+
+            {/* Signature Highlight Banner */}
+            <div className="p-4 rounded-xl bg-gradient-to-r from-[#2A1F18] via-[#211813] to-[#2A1F18] border border-[#DFC9A6]/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex items-start gap-3">
+                <Flame className="w-5 h-5 text-[#EC633D] shrink-0 mt-0.5" />
+                <div>
+                  <span className="font-display font-bold text-xs sm:text-sm text-[#F6F1E7] block">
+                    Dấu ấn sáng tạo cá nhân (Personal Creative Signature):
+                  </span>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed mt-0.5">
+                    Tư duy dựng phim <span className="text-[#DFC9A6] font-semibold">Match Cut dựa trên nhịp điệu âm nhạc (Rhythm-based editing)</span> — chuyển cảnh không dùng transition mặc định mà cắt nối bằng quán tính chuyển động cơ thể, tạo cảm giác thôi miên và giữ chân người xem xuyên suốt 100% thời lượng.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -518,6 +628,116 @@ const CaseStudiesSection: React.FC = () => {
               </div>
             ))}
           </div>
+
+          {/* INDIVIDUAL CONTRIBUTION & WORK BREAKDOWN (GIẢI TRÌNH VAI TRÒ CÁ NHÂN & DẤU ẤN THỰC CHIẾN SGHP) */}
+          <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#1B140E] border-2 border-[#FBB03B]/40 shadow-[8px_8px_0px_rgba(0,0,0,0.6)]">
+            {/* Header Tag */}
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-[#FBB03B]/20">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FBB03B] animate-pulse" />
+                <span className="font-mono text-xs text-[#FBB03B] font-black tracking-widest uppercase">
+                  ✦ SCOPE OF WORK // PHẦN VIỆC CÁ NHÂN ĐẢM NHẬN TRONG BAN TRUYỀN THÔNG SGHP
+                </span>
+              </div>
+              <span className="font-mono text-[11px] px-3 py-1 rounded bg-[#2A1F18] border border-[#FBB03B]/30 text-[#FBB03B] font-bold">
+                MEDIA EXECUTIVE &amp; LEAD VIDEO PRODUCER
+              </span>
+            </div>
+
+            {/* 4 Pillars Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              {/* Pillar 1 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">01 // PHOTOSHOOT CONCEPT</span>
+                    <Camera className="w-4 h-4 text-[#FBB03B]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Sáng Tạo Bối Cảnh Chụp Merch
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Khảo sát địa điểm, đề xuất concept flatlay trên cỏ xanh và graffiti cầu thang. Khôi trực tiếp cầm máy <strong className="text-[#F6F1E7]">Lumix GH5</strong> chụp 5 bộ ảnh sản phẩm thực tế dùng cho chiến dịch Pre-order.
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
+                  ✓ 100% Chụp &amp; Chỉnh sửa ảnh Merch
+                </div>
+              </div>
+
+              {/* Pillar 2 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">02 // TIKTOK CONTENT</span>
+                    <Scissors className="w-4 h-4 text-[#DFC9A6]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Quay Dựng Tuyến Video 9.000+ Views
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Trực tiếp cầm máy quay phỏng vấn tương tác đường phố, cắt ghép chuỗi video TikTok chiến dịch Merch. Sử dụng nhịp cắt hài hước, sound effect meme bắt trend Gen Z và tự thu âm lồng tiếng (Voiceover).
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
+                  ✓ 100% Đạo diễn hiện trường &amp; Dựng TikTok
+                </div>
+              </div>
+
+              {/* Pillar 3 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">03 // COPYWRITING &amp; AI</span>
+                    <Sparkles className="w-4 h-4 text-[#FBB03B]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Soạn Thảo Caption Đa Mục Đích
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Sử dụng ChatGPT/Claude nghiên cứu văn phong trẻ trung của Saigon Hotpot, viết các bài đăng mở đơn (Inform), câu chuyện tình nguyện viên (Entertain) và thông điệp văn hóa Sài Gòn (Educate).
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
+                  ✓ Tự chủ Copywriting &amp; Caption Post
+                </div>
+              </div>
+
+              {/* Pillar 4 */}
+              <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">04 // COLLABORATION</span>
+                    <UserCheck className="w-4 h-4 text-[#DFC9A6]" />
+                  </div>
+                  <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                    Phối Hợp Ban Hậu Cần &amp; Thiết Kế
+                  </h5>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed">
+                    Làm việc cùng đội thiết kế mẫu sticker và ban tài chính để chốt ngày phát hành Teaser đúng mốc Pre-order (13/12 – 26/12), bảo đảm video viral lên đúng khung giờ vàng tương tác cao.
+                  </p>
+                </div>
+                <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
+                  ✓ Phối hợp đa phòng ban &amp; Quản trị timeline
+                </div>
+              </div>
+            </div>
+
+            {/* Signature Highlight Banner */}
+            <div className="p-4 rounded-xl bg-gradient-to-r from-[#2A1F18] via-[#211813] to-[#2A1F18] border border-[#FBB03B]/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex items-start gap-3">
+                <Flame className="w-5 h-5 text-[#FBB03B] shrink-0 mt-0.5" />
+                <div>
+                  <span className="font-display font-bold text-xs sm:text-sm text-[#F6F1E7] block">
+                    Dấu ấn sáng tạo cá nhân (Personal Creative Signature):
+                  </span>
+                  <p className="text-xs text-[#AFA59A] leading-relaxed mt-0.5">
+                    Khả năng <span className="text-[#FBB03B] font-semibold">"Humanize" sản phẩm merchandise</span> — biến những vật phẩm tĩnh (móc khóa, áo tote, sticker) thành những nhân vật sống động qua các tình huống phỏng vấn giấu tên và meme tình huống, đưa video đạt tỷ lệ xem hết (Completion Rate) vượt trội.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -631,6 +851,116 @@ const CaseStudiesSection: React.FC = () => {
             <div className="font-display font-black text-3xl sm:text-4xl text-[#EC633D]">+3.300</div>
             <div className="text-xs text-[#DFC9A6] uppercase mt-1">Followers Tăng Tự Nhiên Chỉ Sau 3 Tuần</div>
           </SpotlightCard>
+        </div>
+
+        {/* INDIVIDUAL CONTRIBUTION & WORK BREAKDOWN (GIẢI TRÌNH VAI TRÒ CÁ NHÂN & DẤU ẤN THỰC CHIẾN PHỈ THÚY) */}
+        <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#1B140E] border-2 border-[#7A181D]/60 shadow-[8px_8px_0px_rgba(0,0,0,0.6)]">
+          {/* Header Tag */}
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-[#7A181D]/40">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#EC633D] animate-pulse" />
+              <span className="font-mono text-xs text-[#EC633D] font-black tracking-widest uppercase">
+                ✦ SCOPE OF WORK // PHẦN VIỆC CÁ NHÂN ĐẢM NHẬN TRONG DỰ ÁN CREATOR &amp; AFFILIATE
+              </span>
+            </div>
+            <span className="font-mono text-[11px] px-3 py-1 rounded bg-[#2A1F18] border border-[#7A181D]/60 text-[#DFC9A6] font-bold">
+              SOLO VIDEOGRAPHER &amp; VIRAL STORYTELLER
+            </span>
+          </div>
+
+          {/* 4 Pillars Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {/* Pillar 1 */}
+            <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">01 // STORYBOARD &amp; SCRIPT</span>
+                  <Sparkles className="w-4 h-4 text-[#DFC9A6]" />
+                </div>
+                <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                  Biên Kịch &amp; Câu Hook Cảm Xúc
+                </h5>
+                <p className="text-xs text-[#AFA59A] leading-relaxed">
+                  Trực tiếp lên ý tưởng và kịch bản phân cảnh (Storyboard) đánh vào nỗi sợ bị lừa ngọc giả hoặc câu chuyện phong thủy truyền cảm hứng. Thiết kế 3 giây đầu giữ chân người xem bằng hình ảnh zoom cận sắc nét.
+                </p>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                ✓ 100% Viết Kịch bản &amp; Hook 3s đầu
+              </div>
+            </div>
+
+            {/* Pillar 2 */}
+            <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">02 // LIGHTING &amp; MACRO CAM</span>
+                  <Camera className="w-4 h-4 text-[#EC633D]" />
+                </div>
+                <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                  Setup Ánh Sáng &amp; Quay Macro
+                </h5>
+                <p className="text-xs text-[#AFA59A] leading-relaxed">
+                  Tự chủ setup dàn đèn key light và rim light tôn lên độ trong suốt, vân ngọc phỉ thúy tự nhiên. Sử dụng máy quay <strong className="text-[#F6F1E7]">Lumix GH5</strong> ghi hình cận cảnh (Macro shot) với độ sâu trường ảnh nông đậm chất điện ảnh.
+                </p>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                ✓ Trực tiếp thiết đặt ánh sáng &amp; góc máy
+              </div>
+            </div>
+
+            {/* Pillar 3 */}
+            <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">03 // COLOR &amp; SOUND DESIGN</span>
+                  <Scissors className="w-4 h-4 text-[#DFC9A6]" />
+                </div>
+                <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                  Color Grading &amp; Thiết Kế m Thanh
+                </h5>
+                <p className="text-xs text-[#AFA59A] leading-relaxed">
+                  Chỉnh màu trên <strong className="text-[#F6F1E7]">DaVinci Resolve</strong> để sắc xanh lục bảo và đỏ huyết dụ của ngọc lên chuẩn xác, sang trọng. Lồng ghép âm thanh gõ ngọc thanh tao, tiếng suối và nhạc không lời tạo bầu không khí an yên.
+                </p>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                ✓ 100% Chỉnh màu &amp; Soundscape thư giãn
+              </div>
+            </div>
+
+            {/* Pillar 4 */}
+            <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">04 // VIRAL OPTIMIZATION</span>
+                  <Flame className="w-4 h-4 text-[#EC633D]" />
+                </div>
+                <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
+                  Tối Ưu Thuật Toán &amp; Tăng Trưởng
+                </h5>
+                <p className="text-xs text-[#AFA59A] leading-relaxed">
+                  Thử nghiệm A/B Testing tiêu đề video và thumbnail. Đưa video đầu tiên chạm mốc <strong className="text-[#EC633D]">570K+ views</strong>, kéo hơn <strong className="text-[#DFC9A6]">+3.3K followers</strong> organic chỉ trong vòng 3 tuần vận hành kênh.
+                </p>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
+                ✓ Phân tích dữ liệu &amp; Nhân bản format viral
+              </div>
+            </div>
+          </div>
+
+          {/* Signature Highlight Banner */}
+          <div className="p-4 rounded-xl bg-gradient-to-r from-[#2A1F18] via-[#211813] to-[#2A1F18] border border-[#7A181D]/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <Flame className="w-5 h-5 text-[#EC633D] shrink-0 mt-0.5" />
+              <div>
+                <span className="font-display font-bold text-xs sm:text-sm text-[#F6F1E7] block">
+                  Dấu ấn sáng tạo cá nhân (Personal Creative Signature):
+                </span>
+                <p className="text-xs text-[#AFA59A] leading-relaxed mt-0.5">
+                  Nghệ thuật <span className="text-[#EC633D] font-semibold">"Emotional Cinematic Storytelling"</span> — không bán hàng một cách thô ráp (hard-sell), mà dùng hình ảnh macro tĩnh lặng kết hợp nhịp giọng dẫn chuyện chân thành, đánh trúng tâm lý tìm kiếm sự bình an của khách hàng cao cấp.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 

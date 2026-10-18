@@ -5,6 +5,7 @@ import { RedlineNote } from '../components/ArchitecturalMarkup';
 import InteractiveSearch from '../components/InteractiveSearch';
 import DecryptedText from '../components/react-bits/DecryptedText';
 import SpotlightCard from '../components/react-bits/SpotlightCard';
+import { FileText, ArrowDownRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -81,8 +82,29 @@ const HeroSection: React.FC = () => {
             <span className="text-[#EC633D] font-mono text-xs font-bold">[ AI WORKFLOW ]</span>.
           </p>
 
+          {/* Quick CTA: View CV & Personal Scope */}
+          <div className="flex flex-wrap items-center gap-3 my-2">
+            <a
+              href="/cv-huynh-pham-minh-khoi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#DFC9A6] text-[#140F0B] font-mono text-xs font-black tracking-wider uppercase shadow-[3px_3px_0px_rgba(0,0,0,0.5)] hover:bg-[#F6F1E7] transition-all hover:scale-105 active:scale-95"
+            >
+              <FileText className="w-4 h-4 text-[#140F0B]" />
+              <span>XEM CV CÁ NHÂN (PDF)</span>
+            </a>
+
+            <a
+              href="#veloth"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#2A1F18] border border-[#DFC9A6]/40 text-[#DFC9A6] font-mono text-xs font-bold tracking-wider uppercase hover:border-[#DFC9A6] hover:bg-[#34261E] transition-all"
+            >
+              <span>VAI TRÒ CÁ NHÂN TRONG DỰ ÁN</span>
+              <ArrowDownRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
           {/* Interactive Search + Quick Jump */}
-          <div className="mt-2 max-w-md">
+          <div className="mt-1 max-w-md">
             <InteractiveSearch />
           </div>
         </div>

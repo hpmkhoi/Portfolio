@@ -52,6 +52,15 @@ const Navbar: React.FC<NavbarProps> = ({ onToggleDirector, isDirectorActive }) =
           )}
 
           <a
+            href="/cv-huynh-pham-minh-khoi.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center h-8 px-3 rounded-full bg-[#DFC9A6] text-[#140F0B] font-mono text-[10px] font-black tracking-wider uppercase shadow-[2px_2px_0px_rgba(0,0,0,0.3)] hover:bg-[#F6F1E7] transition-all"
+          >
+            <span>CV (PDF)</span>
+          </a>
+
+          <a
             href="#contact"
             className="group relative inline-flex items-center h-8 px-3.5 rounded-full bg-[#283F7D] text-[#FFFBF3] font-mono text-[11px] font-bold tracking-wider uppercase overflow-hidden shadow-[2px_2px_0px_rgba(0,0,0,0.4)] hover:bg-[#3B60C5] transition-colors"
           >
@@ -104,6 +113,16 @@ const Navbar: React.FC<NavbarProps> = ({ onToggleDirector, isDirectorActive }) =
             className="py-2 border-b border-white/10 text-[#F6F1E7] hover:text-[#DFC9A6]"
           >
             03 // Phỉ Thúy Hồng Anh
+          </a>
+          <a
+            href="/cv-huynh-pham-minh-khoi.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileOpen(false)}
+            className="py-2 border-b border-white/10 text-[#DFC9A6] font-bold flex items-center justify-between"
+          >
+            <span>📄 Xem CV Cá Nhân (PDF)</span>
+            <ArrowUpRight className="w-4 h-4" />
           </a>
           <a
             href="#contact"
