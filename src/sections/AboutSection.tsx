@@ -92,7 +92,7 @@ const AboutSection: React.FC = () => {
               <span className="font-mono text-xs text-[#EC633D] font-bold block mb-1">01 // KỊCH BẢN &amp; INSIGHT</span>
               <h4 className="font-display font-bold text-xs text-[#F6F1E7] mb-1">ChatGPT · Claude · Gemini</h4>
               <p className="text-[11px] text-[#AFA59A] leading-relaxed">
-                Phân tích đối tượng người xem, lên shotlist phân cảnh và viết caption đa mục đích (Entertain, Inform, Educate).
+                Phân tích đối tượng người xem, nghiên cứu thị hiếu và hỗ trợ lập shotlist phân cảnh trước khi bấm máy.
               </p>
             </div>
 

@@ -3,9 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import OutlinedTitle from '../components/OutlinedTitle';
 import { RedlineNote } from '../components/ArchitecturalMarkup';
 import InteractiveSearch from '../components/InteractiveSearch';
-import DecryptedText from '../components/react-bits/DecryptedText';
 import SpotlightCard from '../components/react-bits/SpotlightCard';
-import { FileText, ArrowDownRight } from 'lucide-react';
+import { ArrowDownRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -82,24 +81,14 @@ const HeroSection: React.FC = () => {
             <span className="text-[#EC633D] font-mono text-xs font-bold">[ AI WORKFLOW ]</span>.
           </p>
 
-          {/* Quick CTA: View CV & Personal Scope */}
+          {/* Quick CTA: Personal Scope in Projects */}
           <div className="flex flex-wrap items-center gap-3 my-2">
             <a
-              href="/cv-huynh-pham-minh-khoi.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#DFC9A6] text-[#140F0B] font-mono text-xs font-black tracking-wider uppercase shadow-[3px_3px_0px_rgba(0,0,0,0.5)] hover:bg-[#F6F1E7] transition-all hover:scale-105 active:scale-95"
-            >
-              <FileText className="w-4 h-4 text-[#140F0B]" />
-              <span>XEM CV CÁ NHÂN (PDF)</span>
-            </a>
-
-            <a
               href="#veloth"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#2A1F18] border border-[#DFC9A6]/40 text-[#DFC9A6] font-mono text-xs font-bold tracking-wider uppercase hover:border-[#DFC9A6] hover:bg-[#34261E] transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#DFC9A6] text-[#140F0B] font-mono text-xs font-black tracking-wider uppercase shadow-[3px_3px_0px_rgba(0,0,0,0.5)] hover:bg-[#F6F1E7] transition-all hover:scale-105 active:scale-95"
             >
               <span>VAI TRÒ CÁ NHÂN TRONG DỰ ÁN</span>
-              <ArrowDownRight className="w-3.5 h-3.5" />
+              <ArrowDownRight className="w-4 h-4 text-[#140F0B]" />
             </a>
           </div>
 
@@ -120,7 +109,7 @@ const HeroSection: React.FC = () => {
                 style={{ y: imgY, scale: imgScale }}
                 src="/khoi-portrait.jpg"
                 alt="Minh Khôi Portrait"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[center_15%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#140F0B]/85 via-transparent to-transparent pointer-events-none" />
 

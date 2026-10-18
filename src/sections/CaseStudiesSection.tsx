@@ -121,7 +121,7 @@ const CaseStudiesSection: React.FC = () => {
       tag: 'LANDSCAPE // ARCHITECTURAL',
       format: 'Ảnh Ngang (Landscape 16:9)',
       src: '/veloth-3.png',
-      desc: 'Áo khoác sơ mi đen washed kết hợp bố cục watermark kiến trúc đường phố Quận 1.',
+      desc: 'Áo khoác sơ mi đen washed kết hợp bố cục watermark kiến trúc đường phố.',
     },
   ];
 
@@ -359,7 +359,7 @@ const CaseStudiesSection: React.FC = () => {
                     Lên Kịch Bản &amp; Shotlist
                   </h5>
                   <p className="text-xs text-[#AFA59A] leading-relaxed">
-                    Nghĩ ý tưởng và thông điệp <strong className="text-[#DFC9A6]">"Break the matrix"</strong>. Tự gom moodboard hình ảnh, chọn địa điểm quay đêm ở Quận 1 và lên danh sách từng góc máy (shotlist) để hôm quay không bị rối.
+                    Nghĩ ý tưởng và thông điệp <strong className="text-[#DFC9A6]">"Break the matrix"</strong>. Tự gom moodboard hình ảnh, chọn địa điểm quay đêm và lên danh sách từng góc máy (shotlist) để hôm quay không bị rối.
                   </p>
                 </div>
                 <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#EC633D] font-bold">
@@ -491,7 +491,7 @@ const CaseStudiesSection: React.FC = () => {
                 <strong>Saigon Hotpot:</strong> Tổ chức sinh viên tình nguyện thành lập từ 2006, chuyên cung cấp các tour đi bộ miễn phí nhằm quảng bá vẻ đẹp và văn hóa TP.HCM đến bạn bè quốc tế.
               </p>
               <p className="text-xs sm:text-sm text-[#373737] leading-relaxed">
-                <strong>Đóng góp của Minh Khôi:</strong> Lên concept bộ ảnh photoshoot sản phẩm, thiết kế ấn phẩm social, sáng tạo caption đa mục đích (Entertain, Inform, Educate) và trực tiếp bấm máy, dựng chuỗi video TikTok chiến dịch đạt <strong className="text-[#A6191E]">9.000+ views</strong>.
+                <strong>Đóng góp của Minh Khôi:</strong> Hỗ trợ lên ý tưởng bộ ảnh sản phẩm, sáng tạo caption bài đăng và trực tiếp quay, dựng chuỗi video TikTok chiến dịch đạt <strong className="text-[#A6191E]">9.000+ views</strong>.
               </p>
             </div>
           </div>
@@ -501,7 +501,7 @@ const CaseStudiesSection: React.FC = () => {
         <div className="mb-14">
           <div className="flex items-center justify-between mb-4">
             <span className="font-mono text-xs text-[#DFC9A6] font-bold tracking-wider uppercase">
-              ✦ HÌNH ẢNH THỰC CHIẾN // MERCHANDISE 2025 PHOTOSHOOT
+              ✦ HÌNH ẢNH CHIẾN DỊCH // MERCHANDISE 2025
             </span>
             <span className="font-mono text-[10px] text-[#AFA59A]">5 ASSETS</span>
           </div>
@@ -650,18 +650,18 @@ const CaseStudiesSection: React.FC = () => {
               <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">01 // CHỤP ẢNH MERCH</span>
+                    <span className="font-mono text-[10px] text-[#AFA59A] uppercase tracking-wider font-bold">01 // Ý TƯỞNG BỘ ẢNH</span>
                     <Camera className="w-4 h-4 text-[#FBB03B]" />
                   </div>
                   <h5 className="font-display font-black text-sm text-[#F6F1E7] mb-2">
-                    Tự Chụp 5 Bộ Ảnh Sản Phẩm
+                    Hỗ Trợ Lên Ý Tưởng Bộ Ảnh
                   </h5>
                   <p className="text-xs text-[#AFA59A] leading-relaxed">
-                    Tự tìm góc chụp, sắp xếp sản phẩm (áo tote, móc khóa, sticker) trên bãi cỏ và cầu thang. Cầm máy <strong className="text-[#F6F1E7]">Lumix GH5</strong> chụp và chỉnh màu hoàn chỉnh để kịp chạy bài mở đơn.
+                    Cùng ban tổ chức thảo luận concept, đề xuất góc máy và hỗ trợ sắp xếp bố cục sản phẩm (áo tote, móc khóa, sticker) trên bãi cỏ, cầu thang để chuẩn bị cho buổi chụp ảnh mở bán.
                   </p>
                 </div>
                 <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
-                  ✓ 100% tự chụp &amp; chỉnh ảnh
+                  ✓ Hỗ trợ lên ý tưởng concept
                 </div>
               </div>
 
@@ -695,7 +695,7 @@ const CaseStudiesSection: React.FC = () => {
                     Viết Nội Dung &amp; Caption
                   </h5>
                   <p className="text-xs text-[#AFA59A] leading-relaxed">
-                    Soạn caption bài đăng mở bán, bài giới thiệu câu lạc bộ và các bài tương tác vui nhộn. Tận dụng AI để gợi ý câu từ ngắn gọn, đánh trúng sự tò mò của sinh viên và du khách.
+                    Soạn caption bài đăng mở bán, bài giới thiệu câu lạc bộ và các bài tương tác vui nhộn trên mạng xã hội, đảm bảo câu chữ ngắn gọn, gần gũi với sinh viên.
                   </p>
                 </div>
                 <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
@@ -719,21 +719,6 @@ const CaseStudiesSection: React.FC = () => {
                 </div>
                 <div className="mt-3 pt-2.5 border-t border-white/5 font-mono text-[10px] text-[#FBB03B] font-bold">
                   ✓ Bám sát deadline chiến dịch
-                </div>
-              </div>
-            </div>
-
-            {/* Signature Highlight Banner */}
-            <div className="p-4 rounded-xl bg-[#2A1F18] border border-[#FBB03B]/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div className="flex items-start gap-3">
-                <Flame className="w-5 h-5 text-[#FBB03B] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-display font-bold text-xs sm:text-sm text-[#F6F1E7] block">
-                    Điểm riêng của Khôi ở project này:
-                  </span>
-                  <p className="text-xs text-[#AFA59A] leading-relaxed mt-0.5">
-                    Không quay giới thiệu sản phẩm kiểu bán hàng nhàm chán. Khôi lồng đồ merch vào các <strong className="text-[#FBB03B]">tình huống phỏng vấn giấu mặt và câu hỏi troll vui vẻ</strong>, giúp người xem coi hết clip một cách tự nhiên.
-                  </p>
                 </div>
               </div>
             </div>

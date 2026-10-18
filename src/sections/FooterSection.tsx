@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import OutlinedTitle from '../components/OutlinedTitle';
-import { RedlineNote, ArchitectCTA } from '../components/ArchitecturalMarkup';
-import { Mail, Phone, Copy, Check, FileText } from 'lucide-react';
+import { RedlineNote } from '../components/ArchitecturalMarkup';
+import { Mail, Phone, Copy, Check } from 'lucide-react';
 
 const FooterSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -67,15 +67,6 @@ const FooterSection: React.FC = () => {
             )}
           </button>
 
-          <a
-            href="/cv-huynh-pham-minh-khoi.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-3 px-6 py-3.5 rounded-xl bg-[#283F7D] hover:bg-[#3B60C5] text-white font-mono text-xs sm:text-sm font-bold tracking-wider shadow-[4px_4px_0px_rgba(0,0,0,0.4)] transition-all duration-200"
-          >
-            <FileText className="w-4 h-4 text-[#DFC9A6] group-hover:scale-110 transition-transform" />
-            <span>Tải / Xem CV Cá Nhân (PDF)</span>
-          </a>
         </div>
 
         {/* Illoca Giant Debossed Brand Mark at the very bottom */}
