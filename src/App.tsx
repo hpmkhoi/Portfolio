@@ -10,7 +10,6 @@ import HeroSection from './sections/HeroSection';
 import MarqueeSection from './sections/MarqueeSection';
 import AboutSection from './sections/AboutSection';
 import CaseStudiesSection from './sections/CaseStudiesSection';
-import EasterEgg3D from './components/EasterEgg3D';
 import FooterSection from './sections/FooterSection';
 
 const App: React.FC = () => {
@@ -48,8 +47,6 @@ const App: React.FC = () => {
           <MarqueeSection />
           <AboutSection />
           <CaseStudiesSection />
-          {/* Interactive 3D Easter Egg Lab */}
-          <EasterEgg3D />
         </main>
 
         {/* Architectural Footer */}
