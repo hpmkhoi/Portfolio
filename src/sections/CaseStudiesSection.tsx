@@ -135,7 +135,7 @@ const CaseStudiesSection: React.FC = () => {
       {/* =========================================================================
           CASE STUDY 01: VELOTH.CLO (SPEC ADS STREETWEAR)
           ========================================================================= */}
-      <article id="veloth" className="mb-28 md:mb-40 pt-12">
+      <article id="veloth" className="mb-28 md:mb-40 pt-12 scroll-mt-24">
         {/* Illoca Folder Tab */}
         <div className="flex items-center justify-between mb-4">
           <FolderTab index="01" label="SPEC ADS PROJECT BRIEF" color="#EC633D" />
@@ -446,7 +446,7 @@ const CaseStudiesSection: React.FC = () => {
       {/* =========================================================================
           CASE STUDY 02: SAIGON HOTPOT (SGHP)
           ========================================================================= */}
-      <article id="sghp" className="mb-28 md:mb-40 pt-12">
+      <article id="sghp" className="mb-28 md:mb-40 pt-12 scroll-mt-24">
         {/* Illoca Folder Tab */}
         <div className="flex items-center justify-between mb-4">
           <FolderTab index="02" label="TỔ CHỨC TÌNH NGUYỆN // MERCH 2025" color="#FBB03B" />
@@ -744,7 +744,7 @@ const CaseStudiesSection: React.FC = () => {
       {/* =========================================================================
           CASE STUDY 03: THẾ GIỚI PHỈ THÚY — HỒNG ANH
           ========================================================================= */}
-      <article id="ptha" className="pt-12">
+      <article id="ptha" className="pt-12 scroll-mt-24">
         {/* Illoca Folder Tab */}
         <div className="flex items-center justify-between mb-4">
           <FolderTab index="03" label="CINEMATIC STORYTELLING &amp; AFFILIATE" color="#7A181D" />

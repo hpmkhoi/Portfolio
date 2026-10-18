@@ -36,24 +36,31 @@ export const RollingLink: React.FC<{
   href: string;
   label: string;
   external?: boolean;
-}> = ({ href, label, external = false }) => {
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
+  active?: boolean;
+}> = ({ href, label, external = false, onClick, active = false }) => {
   return (
     <a
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      className="group relative inline-block font-mono text-xs uppercase tracking-widest text-[#F6F1E7]/80 hover:text-[#DFC9A6] transition-colors"
+      onClick={onClick}
+      className={`group relative inline-block font-mono text-xs uppercase tracking-widest transition-colors select-none ${
+        active ? 'text-[#DFC9A6]' : 'text-[#F6F1E7]/80 hover:text-[#DFC9A6]'
+      }`}
     >
-      <span className="inline-block overflow-hidden h-[1.3em] align-top">
-        <span className="block transition-transform duration-300 ease-[cubic-bezier(0.2,0,0.1,1)] group-hover:-translate-y-full">
-          <span className="block">{label}</span>
-          <span className="block text-[#DFC9A6]">{label}</span>
+      <span className="inline-block overflow-hidden h-[1.4em] leading-[1.4em] align-middle">
+        <span className="block transition-transform duration-300 ease-[cubic-bezier(0.2,0,0.1,1)] group-hover:-translate-y-1/2">
+          <span className="block h-[1.4em] leading-[1.4em]">{label}</span>
+          <span className="block h-[1.4em] leading-[1.4em] text-[#DFC9A6] font-bold">{label}</span>
         </span>
       </span>
       {/* Sliding Perforated Dotted Underline */}
       <span className="absolute bottom-0 left-0 w-full h-[1px] overflow-hidden pointer-events-none">
         <span
-          className="block w-full h-full -translate-x-full transition-transform duration-300 ease-[cubic-bezier(0.2,0,0.1,1)] group-hover:translate-x-0"
+          className={`block w-full h-full transition-transform duration-300 ease-[cubic-bezier(0.2,0,0.1,1)] ${
+            active ? 'translate-x-0' : '-translate-x-full group-hover:translate-x-0'
+          }`}
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='2' viewBox='0 0 4 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23DFC9A6'/%3E%3C/svg%3E")`,
             backgroundRepeat: 'repeat-x',
@@ -83,10 +90,10 @@ export const ArchitectCTA: React.FC<{
       </div>
 
       {/* Rolling Label */}
-      <div className="relative z-10 px-4 font-mono text-xs font-semibold tracking-wider text-center overflow-hidden h-[1.3em]">
-        <div className="transition-transform duration-300 ease-[cubic-bezier(0.2,0,0.1,1)] group-hover:-translate-y-full">
-          <div>{label}</div>
-          <div className="text-white font-bold">{label}</div>
+      <div className="relative z-10 px-4 font-mono text-xs font-semibold tracking-wider text-center overflow-hidden h-[1.4em] leading-[1.4em]">
+        <div className="transition-transform duration-300 ease-[cubic-bezier(0.2,0,0.1,1)] group-hover:-translate-y-1/2">
+          <div className="h-[1.4em] leading-[1.4em]">{label}</div>
+          <div className="h-[1.4em] leading-[1.4em] text-white font-bold">{label}</div>
         </div>
       </div>
     </div>

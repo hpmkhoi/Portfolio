@@ -6,7 +6,7 @@ import { Cpu, CheckCircle2, Video, Camera } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="relative z-10 py-24 md:py-36 px-6 md:px-12 max-w-7xl mx-auto">
+    <section id="about" className="relative z-10 py-24 md:py-36 px-6 md:px-12 max-w-7xl mx-auto scroll-mt-24">
       {/* Illoca Folder Tab Header */}
       <div className="flex items-center justify-between mb-4">
         <FolderTab index="00" label="NĂNG LỰC CỐT LÕI &amp; AI WORKFLOW" color="#DFC9A6" />

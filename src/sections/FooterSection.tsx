@@ -13,7 +13,7 @@ const FooterSection: React.FC = () => {
   };
 
   return (
-    <footer id="contact" className="relative z-10 pt-28 pb-16 bg-[#0E0A07] border-t border-[#DFC9A6]/20">
+    <footer id="contact" className="relative z-10 pt-28 pb-16 bg-[#0E0A07] border-t border-[#DFC9A6]/20 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Top Eyebrow */}
