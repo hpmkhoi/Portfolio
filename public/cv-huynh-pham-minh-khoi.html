@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Huỳnh Phạm Minh Khôi | Video Editor & Content</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #222;
+      background: #f8f9fa;
+      font-size: 10pt;
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm 16mm;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 32px 36px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      border-radius: 4px;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #222;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .header-left h1 {
+      font-size: 20pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.3px;
+      line-height: 1.15;
+      color: #111;
+    }
+    .header-left .subtitle {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #b84323;
+      margin-top: 4px;
+    }
+    .header-right {
+      text-align: right;
+      font-size: 9pt;
+      color: #444;
+      line-height: 1.6;
+    }
+    .header-right a {
+      color: #b84323;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ── Portfolio Bar ── */
+    .portfolio-bar {
+      background: #faf7f2;
+      border: 1px solid #dfd3c3;
+      border-radius: 4px;
+      padding: 8px 14px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9pt;
+    }
+    .portfolio-bar span {
+      color: #555;
+      font-weight: 500;
+    }
+    .portfolio-bar a {
+      color: #b84323;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* ── Section Title ── */
+    .section {
+      margin-bottom: 13px;
+    }
+    .section-title {
+      font-size: 9pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #b84323;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ── About Text ── */
+    .about-text {
+      font-size: 9.5pt;
+      color: #333;
+      text-align: justify;
+    }
+
+    /* ── Education ── */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .edu-school {
+      font-weight: 700;
+      font-size: 10pt;
+      color: #111;
+    }
+    .edu-time {
+      font-size: 8.5pt;
+      color: #666;
+      font-weight: 500;
+    }
+    .edu-sub {
+      font-size: 9pt;
+      color: #444;
+      display: flex;
+      gap: 16px;
+      margin-top: 2px;
+    }
+    .edu-sub strong {
+      color: #222;
+    }
+
+    /* ── Skills Grid ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 20px;
+      font-size: 9pt;
+    }
+    .skill-block strong {
+      color: #111;
+      display: inline-block;
+      min-width: 110px;
+    }
+    .skill-block span {
+      color: #444;
+    }
+
+    /* ── Projects ── */
+    .project {
+      margin-bottom: 11px;
+      page-break-inside: avoid;
+    }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .project-name {
+      font-weight: 700;
+      font-size: 10pt;
+      color: #111;
+    }
+    .project-role {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #b84323;
+    }
+    .project-desc {
+      font-size: 9pt;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+    .project ul {
+      margin-left: 18px;
+      font-size: 9pt;
+      color: #333;
+    }
+    .project ul li {
+      margin-bottom: 2px;
+    }
+
+    /* ── Footer ── */
+    .cv-footer {
+      margin-top: 16px;
+      padding-top: 8px;
+      border-top: 1px solid #eee;
+      font-size: 8pt;
+      color: #888;
+      text-align: center;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <h1>Huỳnh Phạm Minh Khôi</h1>
+        <div class="subtitle">Video Editor · Videographer · Content</div>
+      </div>
+      <div class="header-right">
+        <div>📧 <a href="mailto:hpmkhoi2007@gmail.com">hpmkhoi2007@gmail.com</a></div>
+        <div>📱 <a href="tel:0934677709">0934 677 709</a></div>
+        <div>📍 TP. Hồ Chí Minh</div>
+        <div>🎯 Vị trí ứng tuyển: Video Editor / Videographer Intern</div>
+      </div>
+    </div>
+
+    <!-- Portfolio Link -->
+    <div class="portfolio-bar">
+      <span>✦ Xem chi tiết các sản phẩm & video thực tế:</span>
+      <a href="https://portfolio-hpmkhoi.vercel.app" target="_blank">https://portfolio-hpmkhoi.vercel.app ↗</a>
+    </div>
+
+    <!-- Giới thiệu bản thân -->
+    <div class="section">
+      <div class="section-title">Giới Thiệu Bản Thân</div>
+      <p class="about-text">
+        Sinh viên năm hai ngành Tiếng Anh Thương Mại tại ĐH Kinh Tế TP.HCM (UEH). Có kinh nghiệm thực tế về quay phim, dựng video ngắn (TikTok, Reels) và viết nội dung mạng xã hội. Thao tác tốt các phần mềm hậu kỳ, biết cách phối hợp nhịp nhàng trong buổi quay và ứng dụng các công cụ AI để hỗ trợ lên ý tưởng kịch bản nhanh chóng.
+      </p>
+    </div>
+
+    <!-- Học vấn -->
+    <div class="section">
+      <div class="section-title">Học Vấn</div>
+      <div class="edu-item">
+        <span class="edu-school">Đại Học Kinh Tế TP.HCM (UEH)</span>
+        <span class="edu-time">2025 – Hiện tại</span>
+      </div>
+      <div class="edu-sub">
+        <span>Ngành: <strong>Tiếng Anh Thương Mại</strong></span>
+        <span>Danh hiệu: <strong>Sinh viên Giỏi</strong></span>
+        <span>GPA: <strong>3.5 / 4.0</strong></span>
+        <span>IELTS: <strong>7.0</strong></span>
+      </div>
+    </div>
+
+    <!-- Kỹ năng -->
+    <div class="section">
+      <div class="section-title">Kỹ Năng & Công Cụ</div>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <strong>Phần mềm dựng:</strong>
+          <span>CapCut, DaVinci Resolve</span>
+        </div>
+        <div class="skill-block">
+          <strong>Nội dung & Thiết kế:</strong>
+          <span>Canva, viết caption, lên kịch bản video</span>
+        </div>
+        <div class="skill-block">
+          <strong>Thiết bị sử dụng:</strong>
+          <span>Lumix GH5, DJI Action, micro không dây</span>
+        </div>
+        <div class="skill-block">
+          <strong>Ngoại ngữ:</strong>
+          <span>Tiếng Anh (IELTS 7.0), Tiếng Việt</span>
+        </div>
+        <div class="skill-block">
+          <strong>Ứng dụng AI:</strong>
+          <span>ChatGPT, Claude (hỗ trợ shotlist & ý tưởng)</span>
+        </div>
+        <div class="skill-block">
+          <strong>Kỹ năng làm việc:</strong>
+          <span>Chủ động, làm việc nhóm, bám sát deadline</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kinh nghiệm & Dự án thực tế -->
+    <div class="section">
+      <div class="section-title">Kinh Nghiệm Dự Án Thực Tế</div>
+
+      <!-- Project 1: Veloth.clo -->
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">Veloth.clo — Video Dự Án Streetwear</span>
+          <span class="project-role">Quay Phim & Dựng Video</span>
+        </div>
+        <div class="project-desc">Video ngắn giới thiệu các mẫu áo streetwear.</div>
+        <ul>
+          <li>Lên ý tưởng phân cảnh và lập danh sách các góc quay cần thiết (shotlist).</li>
+          <li>Trực tiếp cầm máy quay buổi tối bằng Lumix GH5, điều chỉnh ánh sáng đèn cơ bản.</li>
+          <li>Tự dựng video trên CapCut & DaVinci, cắt ghép khớp theo nhịp nhạc nền.</li>
+          <li>Hướng dẫn mẫu cách thể hiện trước ống kính và điều phối thời gian trong buổi quay nhóm.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: Saigon Hotpot -->
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">Saigon Hotpot — Chiến Dịch Merchandise 2025</span>
+          <span class="project-role">Marketing & Content</span>
+        </div>
+        <div class="project-desc">Tổ chức sinh viên tình nguyện dẫn tour miễn phí cho du khách quốc tế tại TP.HCM.</div>
+        <ul>
+          <li>Hỗ trợ lên ý tưởng concept và sắp xếp bố cục chụp ảnh sản phẩm (áo tote, móc khóa, sticker).</li>
+          <li>Trực tiếp quay phỏng vấn sinh viên và dựng chuỗi clip ngắn TikTok (đạt hơn 9.000 lượt xem).</li>
+          <li>Viết caption cho các bài đăng thông báo mở bán và bài tương tác trên mạng xã hội.</li>
+          <li>Phối hợp cùng ekip bám sát lịch đăng bài và tiến độ mở bán của chiến dịch.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: Phỉ Thúy Hồng Anh -->
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">Thế Giới Phỉ Thúy — Hồng Anh</span>
+          <span class="project-role">Quay Phim & Dựng Video</span>
+        </div>
+        <div class="project-desc">Kênh video ngắn chia sẻ kiến thức và giới thiệu trang sức ngọc phỉ thúy.</div>
+        <ul>
+          <li>Lên kịch bản nội dung ngắn gọn, chọn lọc cách chia sẻ gần gũi, thẳng thắn về sản phẩm.</li>
+          <li>Quay cận cảnh sản phẩm vòng ngọc bằng Lumix GH5 với ánh sáng rõ ràng.</li>
+          <li>Dựng video, chỉnh màu trên DaVinci, làm phụ đề và lồng nhạc nền êm dịu.</li>
+          <li>Video đầu tiên đạt 570K+ lượt xem, hỗ trợ kênh tăng hơn 3.300 người theo dõi sau 3 tuần.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="cv-footer">
+      Huỳnh Phạm Minh Khôi · hpmkhoi2007@gmail.com · 0934 677 709 · Portfolio: https://portfolio-hpmkhoi.vercel.app
+    </div>
+
+  </div>
+</body>
+</html>
