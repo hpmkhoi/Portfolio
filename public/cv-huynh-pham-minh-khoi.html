@@ -13,22 +13,22 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       color: #222;
       background: #f8f9fa;
-      font-size: 10pt;
-      line-height: 1.5;
+      font-size: 9.5pt;
+      line-height: 1.45;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
 
     @page {
       size: A4;
-      margin: 12mm 16mm;
+      margin: 10mm 14mm;
     }
 
     .page {
       max-width: 760px;
-      margin: 20px auto;
+      margin: 16px auto;
       background: #fff;
-      padding: 32px 36px;
+      padding: 24px 30px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
       border-radius: 4px;
     }
@@ -37,20 +37,36 @@
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       border-bottom: 2px solid #222;
       padding-bottom: 12px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+      gap: 16px;
     }
-    .header-left h1 {
-      font-size: 20pt;
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .avatar {
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+      object-position: center 15%;
+      border-radius: 6px;
+      border: 1.5px solid #d4c4a8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      flex-shrink: 0;
+    }
+    .header-title h1 {
+      font-size: 19pt;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: -0.3px;
       line-height: 1.15;
       color: #111;
     }
-    .header-left .subtitle {
+    .header-title .subtitle {
       font-size: 10pt;
       font-weight: 600;
       color: #b84323;
@@ -58,9 +74,10 @@
     }
     .header-right {
       text-align: right;
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #444;
-      line-height: 1.6;
+      line-height: 1.55;
+      flex-shrink: 0;
     }
     .header-right a {
       color: #b84323;
@@ -73,12 +90,12 @@
       background: #faf7f2;
       border: 1px solid #dfd3c3;
       border-radius: 4px;
-      padding: 8px 14px;
-      margin-bottom: 14px;
+      padding: 7px 12px;
+      margin-bottom: 11px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 9pt;
+      font-size: 8.5pt;
     }
     .portfolio-bar span {
       color: #555;
@@ -92,22 +109,22 @@
 
     /* ── Section Title ── */
     .section {
-      margin-bottom: 13px;
+      margin-bottom: 11px;
     }
     .section-title {
-      font-size: 9pt;
+      font-size: 8.5pt;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       color: #b84323;
       border-bottom: 1px solid #eee;
-      padding-bottom: 3px;
-      margin-bottom: 8px;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
     }
 
     /* ── About Text ── */
     .about-text {
-      font-size: 9.5pt;
+      font-size: 9pt;
       color: #333;
       text-align: justify;
     }
@@ -117,24 +134,23 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2px;
     }
     .edu-school {
       font-weight: 700;
-      font-size: 10pt;
+      font-size: 9.5pt;
       color: #111;
     }
     .edu-time {
-      font-size: 8.5pt;
+      font-size: 8pt;
       color: #666;
       font-weight: 500;
     }
     .edu-sub {
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #444;
       display: flex;
-      gap: 16px;
-      margin-top: 2px;
+      gap: 14px;
+      margin-top: 1px;
     }
     .edu-sub strong {
       color: #222;
@@ -144,13 +160,13 @@
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 6px 20px;
-      font-size: 9pt;
+      gap: 4px 18px;
+      font-size: 8.5pt;
     }
     .skill-block strong {
       color: #111;
       display: inline-block;
-      min-width: 110px;
+      min-width: 105px;
     }
     .skill-block span {
       color: #444;
@@ -158,46 +174,46 @@
 
     /* ── Projects ── */
     .project {
-      margin-bottom: 11px;
+      margin-bottom: 9px;
       page-break-inside: avoid;
     }
     .project-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
     .project-name {
       font-weight: 700;
-      font-size: 10pt;
+      font-size: 9.5pt;
       color: #111;
     }
     .project-role {
-      font-size: 9pt;
+      font-size: 8.5pt;
       font-weight: 700;
       color: #b84323;
     }
     .project-desc {
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #666;
       font-style: italic;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
     .project ul {
-      margin-left: 18px;
-      font-size: 9pt;
+      margin-left: 16px;
+      font-size: 8.5pt;
       color: #333;
     }
     .project ul li {
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
 
     /* ── Footer ── */
     .cv-footer {
-      margin-top: 16px;
-      padding-top: 8px;
+      margin-top: 12px;
+      padding-top: 6px;
       border-top: 1px solid #eee;
-      font-size: 8pt;
+      font-size: 7.5pt;
       color: #888;
       text-align: center;
     }
@@ -216,17 +232,20 @@
 <body>
   <div class="page">
 
-    <!-- Header -->
+    <!-- Header with Photo -->
     <div class="header">
       <div class="header-left">
-        <h1>Huỳnh Phạm Minh Khôi</h1>
-        <div class="subtitle">Video Editor · Videographer · Content</div>
+        <img src="khoi-portrait.jpg" alt="Huỳnh Phạm Minh Khôi" class="avatar" />
+        <div class="header-title">
+          <h1>Huỳnh Phạm Minh Khôi</h1>
+          <div class="subtitle">Video Editor · Videographer · Content</div>
+        </div>
       </div>
       <div class="header-right">
         <div>📧 <a href="mailto:hpmkhoi2007@gmail.com">hpmkhoi2007@gmail.com</a></div>
         <div>📱 <a href="tel:0934677709">0934 677 709</a></div>
         <div>📍 TP. Hồ Chí Minh</div>
-        <div>🎯 Vị trí ứng tuyển: Video Editor / Videographer Intern</div>
+        <div>🎯 Vị trí: Video Editor / Videographer Intern</div>
       </div>
     </div>
 
